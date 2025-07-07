@@ -1,5 +1,4 @@
 /* See: https://zmk.dev/docs/development/hardware-integration/pointing?part-type=peripheral#shared-configuration-1 */
-
 / {
     split_inputs {
         #address-cells = <1>;

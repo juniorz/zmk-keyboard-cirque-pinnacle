@@ -6,4 +6,4 @@ manifest:
     - name: cirque-input-module
       remote: petejohanson
       revision: main
-      import: west.yml
+      # import: west.yml
