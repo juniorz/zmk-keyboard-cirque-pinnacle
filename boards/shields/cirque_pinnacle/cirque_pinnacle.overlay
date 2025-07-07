@@ -2,7 +2,7 @@
 /* See: https://zmk.dev/docs/development/hardware-integration/pointing?part-type=peripheral#input-device */
 
 &cirque_pinnacle_i2c {
-    status = "okay";
+    status = "disabled";
 
     glidepoint0: glidepoint@2a {
         compatible = "cirque,pinnacle";
