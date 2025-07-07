@@ -16,7 +16,7 @@
             low-power-enable;
         };
     };
-}
+};
 
 cirque_pinnacle_i2c: &i2c0 {
     compatible = "nordic,nrf-twim";
