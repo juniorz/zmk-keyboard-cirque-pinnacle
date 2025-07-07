@@ -1,4 +1,4 @@
-#include "corne_pinnacle.dtsi"
+#include "cirque_pinnacle.dtsi"
 
 /* central device */
 &glidepoint_listener {

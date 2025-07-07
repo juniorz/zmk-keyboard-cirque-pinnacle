@@ -1,0 +1,6 @@
+#include "cirque_pinnacle.dtsi"
+
+// Overrides for the input-split child node
+&glidepoint_split {
+    device = <&glidepoint0>;
+};

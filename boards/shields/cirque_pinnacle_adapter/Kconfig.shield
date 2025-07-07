@@ -1,0 +1,2 @@
+config CIRQUE_PINNACLE_ADAPTER
+    def_bool $(shields_list_contains,cirque_pinnacle_adapter)

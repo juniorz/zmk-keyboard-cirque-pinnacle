@@ -1,6 +1,0 @@
-config SHIELD_CORNE_PINNACLE_CENTRAL
-    def_bool $(shields_list_contains,corne_pinnacle_central)
-    depends on ZMK_SPLIT_ROLE_CENTRAL
-
-config SHIELD_CORNE_PINNACLE_TRACKPAD
-    def_bool $(shields_list_contains,corne_pinnacle_trackpad)
