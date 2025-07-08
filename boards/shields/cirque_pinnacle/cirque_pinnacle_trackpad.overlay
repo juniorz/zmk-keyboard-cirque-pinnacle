@@ -11,33 +11,28 @@
     status = "okay";
 };
 
-// TODO: status=okay and dr-gpios must go into the keyboard config
 &cirque_pinnacle_i2c {
     status = "okay";
 
     glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;                                     // default slave address
-        //status = "disabled";
-        //dr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;         // D1 pin
-        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;         // P1.01 (maybe it is P1.02)
+        dr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;           // D1 pin
 
-        sensitivity = "2x";
         sleep;
 
         // see: https://github.com/petejohanson/cirque-input-module/blob/main/dts/bindings/input/cirque%2Cpinnacle-common.yaml
-        //rotate-90 = false;
-        //x-invert = false;
-        //y-invert = false;
-        //sleep = false;
-        //no-secondary-tap = false;
-        //no-taps = false;
+        //rotate-90;
+        //x-invert;
+        //y-invert;
+        //sleep;
+        //no-secondary-tap;
+        //no-taps;
         //sensitivity = 1x | 2x | 3x | 4x
         //x-axis-z-min = 5;
         //y-axis-z-min= 4;
     };
 };
-
 
 // Overrides for the input-split child node
 &glidepoint_split {
