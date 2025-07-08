@@ -20,18 +20,11 @@
 
 cirque_pinnacle_i2c: &i2c0 {
     compatible = "nordic,nrf-twim";
-    //status = "okay";
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
     clock-frequency = <I2C_BITRATE_FAST>;
 };
-
-/*
-&pro_micro_i2c {
-    status = "okay";
-};
-*/
 
 &pro_micro_spi {
     status = "disabled";
