@@ -3,6 +3,14 @@
 /* cirque trackpad I2C pins */
 /* See: https://zmk.dev/docs/development/hardware-integration/pointing?part-type=peripheral#input-device */
 
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
 &cirque_pinnacle_i2c {
     status = "disabled";
 
@@ -11,7 +19,7 @@
         reg = <0x2a>;                                     // default slave address
         //status = "disabled";
         //dr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;         // D1 pin
-        //dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;       // P1.01 (maybe it is P1.02)
+        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;       // P1.01 (maybe it is P1.02)
 
         sensitivity = "2x";
         sleep;
