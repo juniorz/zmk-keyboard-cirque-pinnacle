@@ -1,9 +1,0 @@
-//???
-
-/*
-/ {
-    chosen {
-        zephyr,trackpad = &glidepoint0;
-    };
-};
-*/

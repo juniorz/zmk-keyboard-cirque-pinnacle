@@ -1,6 +1,10 @@
 config SHIELD_CIRQUE_PINNACLE_CENTRAL
     def_bool $(shields_list_contains,cirque_pinnacle_central)
     depends on ZMK_SPLIT_ROLE_CENTRAL
+    depends on INPUT
 
 config SHIELD_CIRQUE_PINNACLE_TRACKPAD
     def_bool $(shields_list_contains,cirque_pinnacle_trackpad)
+    depends on GPIO
+    depends on SPI || I2C
+    depends on INPUT
