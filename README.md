@@ -69,3 +69,5 @@ include:
   - https://github.com/fbrzozowski/cirque-input-module/tree/feat/pointer-acceleration
   - https://github.com/halfdane/cirque-input-module/tree/absolute_mode
   - https://github.com/XinYun2020/cirque-input-module/tree/alice-circular-scroll
+- ?? Should this also be an instance of `zmk,behavior-input-two-axis` behavior?
+  https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#advanced-configuration

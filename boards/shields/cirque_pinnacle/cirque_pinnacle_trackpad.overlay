@@ -7,37 +7,16 @@
     status = "okay";
 };
 
-&gpio1 {
-    status = "okay";
-};
-
-// FIXME: delay dr-gpios pin configuration to an overlay in the app, but it fails compilation if &glidepoint status="disabled"
 &cirque_pinnacle_i2c {
     status = "okay";
 
     glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
         status = "okay";
-
-        // default slave address
         reg = <0x2a>;
-
-        // FIXME: can't alter this in my keyboard overlay if it's defined here
-        //dr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;     // D1 pin
-        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;     // P1.01 on my board
+        dr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;     // D1 pin (nice!view compatible)
 
         sleep;
-
-        // see: https://github.com/petejohanson/cirque-input-module/blob/main/dts/bindings/input/cirque%2Cpinnacle-common.yaml
-        //rotate-90;
-        //x-invert;
-        //y-invert;
-        //sleep;
-        //no-secondary-tap;
-        //no-taps;
-        //sensitivity = 1x | 2x | 3x | 4x
-        //x-axis-z-min = 5;
-        //y-axis-z-min= 4;
     };
 };
 
