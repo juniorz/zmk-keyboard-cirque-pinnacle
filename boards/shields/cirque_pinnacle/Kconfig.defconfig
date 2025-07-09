@@ -1,0 +1,13 @@
+if SHIELD_CIRQUE_PINNACLE_CENTRAL || SHIELD_CIRQUE_PINNACLE_TRACKPAD
+
+config ZMK_POINTING
+    default y
+
+endif
+
+if SHIELD_CIRQUE_PINNACLE_TRACKPAD
+
+config I2C
+    default y
+
+endif

@@ -1,0 +1,6 @@
+#include "cirque_pinnacle.dtsi"
+
+/* central device */
+&glidepoint_listener {
+    status = "okay";    // enable
+};
