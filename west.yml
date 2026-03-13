@@ -1,8 +1,0 @@
-manifest:
-  remotes:
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
-  projects:
-    - name: cirque-input-module
-      remote: petejohanson
-      revision: main

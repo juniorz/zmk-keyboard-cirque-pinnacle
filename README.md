@@ -46,16 +46,7 @@ include:
     glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
 
-        // see: https://github.com/petejohanson/cirque-input-module/blob/main/dts/bindings/input/cirque%2Cpinnacle-common.yaml
-        //rotate-90;
-        //x-invert;
-        //y-invert;
-        //sleep;
-        //no-secondary-tap;
-        //no-taps;
-        //sensitivity = 1x | 2x | 3x | 4x;
-        //x-axis-z-min = 5;
-        //y-axis-z-min= 4;
+        // see: https://docs.zephyrproject.org/4.1.0/build/dts/api/bindings/input/cirque%2Cpinnacle-i2c.html#dtbinding-cirque-pinnacle-i2c
     };
 };
 ```

@@ -1,8 +1,5 @@
 name: zmk-cirque-pinnacle
 build:
-  depends:
-    # petejohanson/cirque-input-module
-    - cirque-input-module
   # Folder containing a "CMakeLists.txt" (. = root)
   cmake: .
   # Kconfig filepath

@@ -14,9 +14,9 @@
         compatible = "cirque,pinnacle";
         status = "okay";
         reg = <0x2a>;
-        dr-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;     // D1 pin (nice!view compatible)
+        data-ready-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;     // D1 pin (nice!view compatible)
 
-        sleep;
+        sleep-mode-enable;
     };
 };
 
